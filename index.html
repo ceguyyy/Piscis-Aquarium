@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Piscis Aquarium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  </head>
+  <body>
+    
+    <div id="overview">
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">PA.</label>
+      <ul id="nav">
+        <li><a class="active" href="#nav">Home</a></li>
+        <li><a href="animal.html">Animal</a></li>
+        <li><a href="#articles-page">Articles</a></li>
+        <li><a href="#sponsorship-page">Sponsorship</a></li>
+        <li><a href="#aboout-us-page">About us</a></li>
+        <li><a id="ticket" href="Signup.html">Signup</a></li>
+        <li><a onclick="togglePopup()" id="ticket">Log In</a></li>
+      </ul>
+    </nav>
+</div>
+<div id="content">
+    <div id="welcome-page" class="center-picture"> 
+          <img id="logopapcit"src="Asset\Untitled-1.png"class="center-picture" alt="logo-awal">
+    </div> 
+
+    <div id="animal-page">
+      <h1 id="animal-text" class="center-text">Animal</h1>
+      <h3 id="animal-EA-text"class="center-text">Endangered Animals</h3>
+      <div id="gambar-hewan">
+        <ul id="animal" class="center-picture">
+          <li>
+              <img class="respon-img"src="image/Axoloth.jpg">
+          </li>
+          <li>
+              <img class="respon-img" src="image/Octopus.jpg">
+          </li>
+          <li>
+              <img class="respon-img" src="image/shark.jpg">
+          </li>
+        </ul>
+        <a id="morebtn" class="center-picture" href="animal.html">More...</a>
+      </div>
+    </div>
+    <div id="articles-page">
+      <h1 id= "article-text" class="center-text">Articles</h1>
+      <ul id="articles" class="center-picture">
+        <li><a href="https://www.msc.org/?gclid=Cj0KCQjwmuiTBhDoARIsAPiv6L_cU7wKMF_GyVhL5d5TMPoA5wiDs8wt5pMf01S890xMDrGU83jkzlcaAt1tEALw_wcB" target="_blank"><img class="hover-img" src="image/sff-500.jpg"></a></li>
+        <li><a href="https://www.msc.org/media-centre/news-opinion/news/2022/03/22/msc-extends-temporary-requirements-for-audits-and-assessments" target="_blank"><img class="hover-img" src="image/rs1144_kyoto_2_0232-spot500.jpg"></a></li>
+      </ul>
+    </div>
+    <div id="sponsorship-page">
+      <h1 id="sponsorship-text" class="center-text">Sponsorship</h1>
+      <ul id="articles" class="center-picture">
+        <li><a href="https://www.msc.org/" target="_blank"><img class="hover-img" src="image/msc-homepage-logo.png"></a></li>
+        <li><a href="https://www.greenpeace.org/indonesia/" target="_blank"><img class="hover-img" src="image/gp-logo.svg"></a></li>
+        <li><a href="https://www.un.org/" target="_blank"><img class="hover-img" src="image/download.png"></a></li>
+      </ul>
+    </div>
+    <div id="aboout-us-page">
+      <h1 class="center-text">About Us</h1>
+      <h1 id="About-Us-Desc" class="center-text"> Piscis Aquarium is a nonprofit organization. We received the GuideStar Platinum seal of approval in GuideStar’s Exchange program, meaning we have obtained their highest rating for transparency and legitimacy as an organization.
+      We protect danger animal especially a water animal from danger and we take care them at our facility so we can save their life from the extinction.
+    </h1>
+    </div>
+    <div id="footer">
+      <h1 id="footer-text" class="center-text">© Piscis Aquarium 2022 </h1>
+    </div>
+    </div>
+
+
+    <div class="popup" id="popup-1">
+      <div class="content-sn">
+       <div class="close-btn" onclick="togglePopup()">
+        ×
+      </div>
+
+      <div id="sinkin">
+        <div id="sinkin2">
+          <h1 id="sign-in-text">Sign in</h1> 
+          <form class="login_form" name="form" onsubmit="">
+            <div class="input-field"><input type="text" id="email-id" placeholder="Email" class="validate"> </div>
+            <div class="input-field"><input id="password-id" placeholder="Password" class="validate"></div>
+              <button id="sign-in-btn" class="second-button" onclick="validate()">Sign in</button>
+              <p id="donthave">Don't have an account? <a id="up-sign"href="Signup.html">Sign Up</a></p>
+             </div>
+            </div>
+           </form>      
+    </div>
+
+  
+  </body>
+  <script src="script.js"></script>
+</html>

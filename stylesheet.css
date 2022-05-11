@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  position: fixed;
+  background: black;
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+label.logo:hover {
+  opacity: 0.8;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+nav a.active,
+nav a:hover {
+  color: #000;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.first {
+  margin-top: -20vh;
+}
+
+#ticket {
+  border: 3px solid #14f195;
+  border-color: #14f195;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+#welcome-page {
+background-image: url(Asset/1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+}
+
+#animal-page {
+background-image: url(image/Barracuda_Light-Tower-Aquarium.jpg);
+background-size: cover;
+height: 100%;
+background-repeat: no-repeat;
+width: 100%;
+padding-bottom: 50px;
+}
+
+.center-picture {
+display: flex;
+margin-left: auto;
+margin-right: auto;
+margin: auto;
+justify-content: center;
+width: 50%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#animal-text {
+  padding: 10px;
+  color: #fff;
+  text-shadow: 5px 1px 8px black;
+}
+#logopapcit{
+max-width: 50%;
+}
+@media (max-width: 952px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .checkbtn:hover,
+  .checkbtn:active {
+    opacity: 0.8;
+  }
+  nav ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    top: 80px;
+    right: 100%;
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0.9;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  nav a:hover,
+  nav a.active {
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+
+
+#articles-page {
+background-image: url(Asset/Homepage.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+width: 100%;
+margin: auto;
+color: white;
+padding-bottom: 30px;;
+}
+.hover-img{
+  width: 100%;
+}
+
+.hover-img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+#article-text{
+  padding: 20px;
+  text-shadow: 5px 1px 8px black;
+}
+
+ul li{
+  margin-left: 10px;
+}
+.respon-img{
+  width: 100%;
+}
+#sponsorship-page{
+background-image: url(image/c2b4769102532b1835c790ca4c7c1afb.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+width: 100%;
+margin: auto;
+color: white;
+padding-bottom: 30px;;
+}
+#sponsorship-text{
+  padding: 20px;
+  color: white;
+  text-shadow: 5px 1px 8px black;
+}
+
+#aboout-us-page{
+background-color: #000;
+background-repeat: no-repeat;
+height: 100%;
+color: white;
+padding-top: 20px;
+padding-bottom: 50px;
+}
+
+#About-Us-Desc{
+  padding: 20px;
+  font-size: 15px;
+}
+.popup .content-sn {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-150%) scale(0);
+ width: 300px;
+ height: 450px;
+ z-index: 2;
+ text-align: center;
+ padding: 20px;
+ border-radius: 20px;
+ background: rgb(14, 14, 14);
+ z-index: 10;
+
+}
+
+.popup .close-btn {
+ position: absolute;
+ right: 20px;
+ top: 20px;
+ width: 30px;
+ height: 30px;
+ color: white;
+ font-size: 30px;
+ border-radius: 50%;
+ padding: 2px 5px 7px 5px;
+ }
+
+.popup.active .content-sn {
+transition: all 100ms ease-in-out;
+transform: translate(-50%,-50%) scale(1);
+}
+
+h1 {
+ text-align: center;
+ font-size: 32px;
+ font-weight: 600;
+ padding-top: 20px;
+ padding-bottom: 10px;
+}
+
+a {
+ font-weight: 600;
+ color: white;
+}
+
+.input-field .validate {
+padding: 20px;
+font-size: 16px;
+border-radius: 10px;
+border: none;
+margin-bottom: 15px;
+color: #bfc0c0;
+background: #262626;
+box-shadow: inset 5px 5px 5px #232323, 
+            inset -5px -5px 5px #292929;
+outline: none;
+}
+
+
+.second-button {
+font-family:"Poppins", sans-serif;
+color: white;
+font-size: 18px;
+font-weight: 500;
+margin-top: 20px;
+padding: 20px 30px;
+border-radius: 40px;
+background: #14f195;
+
+
+}
+
+.second-button:hover{
+  background: #fff;
+  color: #000
+}
+
+.second-button:active{
+background: linear-gradient(145deg,#222222, #292929);
+box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+border: none;
+outline: none;
+}
+p{
+color: #fff;
+padding: 20px;
+}
+
+#sign-in-text{
+  color: #fff;
+  margin-bottom:20px;
+}
+
+
+ form{
+  font-family:"Poppins", sans-serif;
+ }
+
+ #up-sign{
+  font-family:"Poppins", sans-serif;
+ }
+
+ #up-sign:hover{
+background-color: #747474;
+transition: transform 0.25s ease-out;
+transform-origin: bottom left;
+color: white;
+font-size: 15px;
+font-weight: 500px;
+padding: 5px 5px 5px 5px;
+border-radius: 40px;
+border: none;
+ }
+
+ #morebtn
+ {
+  border: 3px solid #14f195;
+  border-color: #14f195;
+  padding-top: 5px;
+  padding-bottom:5px;
+  border-radius: 30px;
+  background-color: #000;
+  color: white;
+  font-family:"Poppins", sans-serif;
+  font-size: 20px;
+}
+#morebtn:hover{
+  border: 3px solid #000;
+  border-color: #000;
+  padding-left: -50px;
+  padding-right: -50px;
+  background-color: #14f195;
+  color: #000;
+  font-family:"Poppins", sans-serif;
+  opacity: 0.8;
+  font-size: 20px;
+
+}
+.respon-img:hover{
+  transform: scale(1.2);
+  filter: grayscale(100%);
+}
+
+#content-animal{
+  background-image: url(image/photo-1559825481-12a05cc00344.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+width: 100%;
+height: 100%;
+margin: auto;
+padding-bottom: 50px;
+}
+#animal-animals-text{
+  color: white;
+  text-shadow: 5px 1px 8px black;
+}
+#animal-EA-text{
+  padding-bottom: 20px;
+  color: white;
+  text-shadow: 5px 1px 8px black;
+}
+
+#content,#content-animal{
+  padding-top:80px;
+}
+#footer-text{
+  background-color: #14f195;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: white;
+  padding: -15px;
+  height: 100%;
+}
+
+#footer{
+  height: 100%;
+}
+
+#footer-animal{
+  height: 100%;
+}
+
+#sinkup{
+  padding-top:200px;
+  background-color: #000;
+  width: 100%;
+  height: calc(100% - 190px);
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  color:white;
+}
+#overview-sinkup{
+  background-color: #000;
+}
+
+#su-body{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  background-color: #000;
+}
+
+.second-button2{
+transition: box-shadow .35s ease ;
+transform: translate(35%, 10%);
+}
+
+.second-button2 {
+  font-family:"Poppins", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 20px 30px;
+  border-radius: 40px;
+  background: #14f195;
+  
+  
+  }
+  
+  .second-button2:hover{
+    background: #fff;
+    color: #000
+  }
